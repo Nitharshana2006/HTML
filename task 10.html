@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Website</title>
+
+<script>
+function message()
+{
+    alert("Welcome to My Website!");
+}
+</script>
+
+</head>
+
+<body bgcolor="lightblue" onload="message()">
+
+<center>
+<h1>MY WEBSITE</h1>
+
+<a href="#home">Home</a> |
+<a href="#about">About</a> |
+<a href="#gallery">Gallery</a> |
+<a href="#contact">Contact</a> |
+<a href="https://www.google.com" target="_blank">Google</a>
+
+<hr width="80%">
+
+<!-- HOME -->
+<h2 id="home">HOME</h2>
+
+<img src="image.jpg" width="300" height="200">
+
+<p>
+Welcome to my website. This website demonstrates HTML multimedia components and JavaScript.
+</p>
+
+<hr width="80%">
+
+<!-- ABOUT -->
+<h2 id="about">ABOUT</h2>
+
+<h3>Our Services</h3>
+
+<ul>
+<li>Web Design</li>
+<li>Training</li>
+<li>Projects</li>
+<li>Placement Support</li>
+</ul>
+
+<h3>Service Details</h3>
+
+<table border="2" cellpadding="10" cellspacing="5">
+
+<tr bgcolor="yellow">
+<th>Service</th>
+<th>Duration</th>
+<th>Fee</th>
+</tr>
+
+<tr>
+<td>HTML</td>
+<td>1 Month</td>
+<td>1000</td>
+</tr>
+
+<tr>
+<td>JavaScript</td>
+<td>1 Month</td>
+<td>1500</td>
+</tr>
+
+<tr>
+<td>Python</td>
+<td>2 Months</td>
+<td>3000</td>
+</tr>
+
+</table>
+
+<hr width="80%">
+
+<!-- GALLERY -->
+<h2 id="gallery">GALLERY</h2>
+
+<h3>Image</h3>
+
+<img src="image.jpg" width="300">
+
+<br><br>
+
+<h3>Audio</h3>
+
+<audio controls>
+<source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<br><br>
+
+<h3>Video</h3>
+
+<video width="400" controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+
+<hr width="80%">
+
+<!-- CONTACT -->
+<h2 id="contact">CONTACT</h2>
+
+<form>
+
+Name:
+<input type="text"><br><br>
+
+Email:
+<input type="email"><br><br>
+
+Message:<br>
+
+<textarea rows="5" cols="40"></textarea>
+
+<br><br>
+
+<input type="button" value="Submit"
+onclick="alert('Thank You for Contacting Us!')">
+
+<input type="reset">
+
+</form>
+
+<hr>
+
+<h3>Thank You for Visiting!</h3>
+
+</center>
+
+</body>
+</html>

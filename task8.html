@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Based JavaScript Dialog Box</title>
+
+    <script>
+        function deleteTask()
+        {
+            alert("You are about to delete the task.");
+
+            var choice = confirm("Do you really want to delete the task?");
+
+            if(choice == true)
+            {
+                var reason = prompt("Enter the reason for deleting the task:");
+
+                if(reason != null && reason != "")
+                {
+                    alert("Task Deleted Successfully!\nReason: " + reason);
+                }
+                else
+                {
+                    alert("Task Deleted Successfully!");
+                }
+            }
+            else
+            {
+                alert("Task Deletion Cancelled.");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+<center>
+
+<h2>Application Based JavaScript Dialog Box</h2>
+
+<h3>Task Deletion Confirmation & Feedback</h3>
+
+<input type="button" value="Delete Task" onclick="deleteTask()">
+
+</center>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+<script>
+function login()
+{
+    var user=document.getElementById("user").value;
+    var pass=document.getElementById("pass").value;
+
+    if(user=="admin" && pass=="1234")
+    {
+        window.location="quiz.html";
+    }
+    else
+    {
+        alert("Invalid Username or Password");
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<center>
+
+<h2>ONLINE QUIZ LOGIN</h2>
+
+<table cellpadding="10">
+
+<tr>
+<td>Username</td>
+<td><input type="text" id="user"></td>
+</tr>
+
+<tr>
+<td>Password</td>
+<td><input type="password" id="pass"></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<input type="button" value="Login" onclick="login()">
+</td>
+</tr>
+
+</table>
+
+</center>
+
+</body>
+</html>
